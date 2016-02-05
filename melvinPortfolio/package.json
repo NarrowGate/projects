@@ -1,13 +1,17 @@
 {
-  "name": "SampleApp",
+  "name": "melvinportfolio",
   "version": "0.0.0",
-  "description": "A sample Node and Express Application",
+  "description": "Melvin's Portfolio Website in Node",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ray Villalobos",
-  "dependencies": {
-    "express": "^3.5.1"
-  }
+  "keywords": [
+    "Node",
+    "Express",
+    "Mongo",
+    "Angular"
+  ],
+  "author": "Melvin Wilson",
+  "license": "ISC"
 }
