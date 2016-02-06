@@ -1,28 +1,27 @@
 var express = require('express'),
-	app = express();
+	app = express(),
+	routes = require('./routes'),
+/*	logger = require('morgan'),
+	bodyParser = require('body-parser'),
+	cookieParser = require('cookie-parser'),*/
+	port = Number(process.env.PORT || 3100);
 
-	app.set('view engine', 'ejs' )
 
-	app.get('/', function(req, res) {
-		res.render('default', {
-			title: 'Melvin Home',
+app.use(express.static('./public'));
+app.set('view engine', 'ejs' );
 
-		})
-	});
 
-	app.get('/melvin', function(req, res) {
-		res.send('PLanet of the ape Melvin')
-	});
+app.get('/', routes.index);
+app.get('/about', routes.about);
+app.get('*', function(req, res) {
+	res.send('Bad Request')
+});
+	
 
-	app.get('/who/:name?', function(req, res) {
-		var name = req.params.name;
-		res.send('My name is ' + name + ".")
-	});
-	app.get('*', function(req, res) {
-		res.send('Bad Request')
-	});
 
-var server = app.listen(3100, function(){
+
+
+var server = app.listen(port, function(){
 	console.log('Go to http://localhost:3100 on your browser');
 });
 
