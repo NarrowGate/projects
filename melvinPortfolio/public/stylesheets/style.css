@@ -7,6 +7,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+header ul {
+	list-style: none;
+}
+header ul li {
+	display: inline-block;
+	float: left;
+}
+
+
+dfd
+
+
 footer p {
 	text-align: center;
 }
