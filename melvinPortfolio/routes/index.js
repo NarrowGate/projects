@@ -1,12 +1,18 @@
-exports.index = function(req, res) {
-		res.render('default', {
-			title: 'Melvin Home',
+var express = require('express'),
+	router = express.Router();
 
+	router.get('/', function(req, res) {
+		res.render('index', {
+			title: 'Melvin Home'
 		})
-	};
+	});
 
-exports.about = function(req, res) {
+	router.get('/about', function(req, res) {
 		res.render('default', {
 			title: 'About Melvin'
 		})
-	};
+	});
+
+
+
+module.exports = router;
