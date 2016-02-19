@@ -16,10 +16,29 @@ header ul li {
 	float: left;
 }
 
+.pfBtnCntnr {
+	padding: 10px 0 50px;
+}
+a.portfolio.btn-info {
+	background: #d52e46;
+	border: none; 
+	padding-left: 50px;
+	padding-right: 50px;
 
-
-
-
+}
+a.portfolio:hover {
+	background: #e63f57; 
+}
+.pfBtnCntnr p {
+	padding-bottom: 50px;
+}
+footer {
+	padding-top: 30px;
+}
 footer p {
 	text-align: center;
+}
+
+.container.main {
+	min-height: 380px;
 }

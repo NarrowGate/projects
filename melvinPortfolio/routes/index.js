@@ -13,6 +13,11 @@ var express = require('express'),
 		})
 	});
 
+	router.get('/contact', function(req, res) {
+		res.render('contact', {
+			title: 'Contact'
+		})
+	});
 
 
 module.exports = router;
