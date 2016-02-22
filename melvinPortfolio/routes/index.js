@@ -19,5 +19,13 @@ var express = require('express'),
 		})
 	});
 
+	router.get('/contact-form', function(req, res) {
+		var name = req.query.name;
+		res.render('contact_thanks', {
+			name: name
+		});
+	});
+
+
 
 module.exports = router;
