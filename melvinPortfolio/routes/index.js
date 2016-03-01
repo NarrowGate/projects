@@ -1,5 +1,7 @@
 var express = require('express'),
-	router = express.Router();
+	router = express.Router(),
+   	data = require('../data.json')
+	;
 
 	router.get('/', function(req, res) {
 		res.render('index', {
@@ -25,6 +27,16 @@ var express = require('express'),
 			name: name
 		});
 	});
+
+	router.get('/portfolio', function(req,res) {
+		// var data = require('__dirname/data.json');
+		res.render('portfolio', 
+			{
+				title: "dat",
+				data: data
+			}
+		)
+	})
 
 
 

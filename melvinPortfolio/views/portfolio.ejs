@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include partials/page/head.ejs %>
+	<meta charset="utf-8">
+	<title>Melvin Wilson</title>
+</head>
+<body>
+	<% include partials/page/header.ejs %>
+
+	<div class="container main">
+	<h1>Portfolio</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<ul>
+					<li>A</li>
+					<li><%= title %></li>
+					<li><%= data.portfolio[2].name%></li>										
+				</ul>				
+			</div>	
+		</div>
+	</div>
+
+
+	<% include partials/page/footer.ejs%>
+	<% include partials/page/jsScripts.ejs%>
+</body>
+</html>
